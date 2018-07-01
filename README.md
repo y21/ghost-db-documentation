@@ -13,6 +13,8 @@ An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 | <a href="#endpoints">Endpoints</a> | 3 minutes |
 | `global` properties |
 | <a href="#global_links">global._links</a> | 3 minutes
+| <a href="#globa_uniquePlayers">global.uniquePlayers</a> | 3 minutes
+
 
 ## About
 Unfortunately, the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Database API</a> is undocumented, and no one has made a documentation for it yet, so I decided it would be helpful for developers in the Mario Kart Wii community to write one, so that people can use the API in their application without any problems. <br/>
@@ -44,3 +46,9 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 **Description:** The `_links` is an object with all links that are shown (file extension is `.json`) in `div._1c1 side-navigation` (link box): <br/>
 <img src="https://i.imgur.com/Yjb8WOT.png" /> <br/>
 `_links.self` is the **current** page, so if you're requesting `/index.json` it should say `./index.json`.
+
+## global.uniquePlayers
+**Type:** integer <br />
+**Available in:** `/index.json` <br/>
+**Static length:** no<br/>
+**Description:** The amount of racers who have submitted at least one ghost to the database.
