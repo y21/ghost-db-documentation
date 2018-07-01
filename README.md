@@ -11,3 +11,7 @@ If you have questions about CTGP-R or Mario Kart Wii in general, you should not 
 In case you found a typo or another mistake, feel free to submit a pull request. I will merge pull requests if they meet the following rules:
 - Accurate description/title: try to describe changes as clear as possible
 - Name all commits: all commit summaries should be clear enough for others to understand what has changed
+
+---
+## Return Format
+The API returns data as JSON which is already part of the web standard and almost every language can parse and work with it. 
