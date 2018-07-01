@@ -6,3 +6,8 @@ Unfortunately the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Data
 
 ## Issues
 If you have questions about CTGP-R or mario kart wii in general, you should not open an issue. You might want to consider contacting <a href="https://www.youtube.com/user/MrBean35000vr">MrBean</a> or Chadderz (founders of CTGP-R) if your problem/question is related to CTGP. You should **only** open issues about the documentation and the API itself.
+
+## Contributing and Pull Requests
+In case you found a typo or another mistake, feel free to submit a pull request. I will merge pull requests if they meet the following rules:
+- Accurate description/title: try to describe changes as clear as possible
+- Name all commits: all commit summaries should be clear enough for others to understand what has changed
