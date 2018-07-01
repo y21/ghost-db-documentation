@@ -16,6 +16,7 @@ An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 | <a href="#global_uniquePlayers">global.uniquePlayers</a> | 1 minute
 | <a href="#global_leaderboardCount">global.leaderboardCount</a> | 1 minute
 | <a href="#global_ghostCount">global.ghostCount</a> | 1 minute
+| <a href="#global_recentRecords">global.recentRecords</a> | 7 minutes
 
 
 ## About
