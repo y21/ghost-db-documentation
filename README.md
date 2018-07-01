@@ -12,7 +12,7 @@ An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 | <a href="#return-format">Return Format | 1 minute
 | <a href="#endpoints">Endpoints</a> | 3 minutes |
 | `global` properties |
-| `global._links` | 3 minutes
+| <a href="#global_links">global._links</a> | 3 minutes
 
 ## About
 Unfortunately, the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Database API</a> is undocumented, and no one has made a documentation for it yet, so I decided it would be helpful for developers in the Mario Kart Wii community to write one, so that people can use the API in their application without any problems. <br/>
