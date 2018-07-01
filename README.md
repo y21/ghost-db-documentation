@@ -1,2 +1,2 @@
 # ghost-db-documentation
-An unofficial markdown documentation for chadsoft's TT API
+An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
