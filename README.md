@@ -78,6 +78,9 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 |----------|-------------|
 | _links   | An object with links that refers to the `item` (ghost), `player` and `leaderboard`. |
 | href | The link to the ghost, equivalent to `_links.item` |
+| country | Country code of where the ghost was created (`undefined` if user has location disabled)
+| region | Region code (`undefined` if user has location disabled)
+| continent | Continent code (`undefined` if user has location disabled)
 | player | The name of racers' mii |
 | trackId | The track ID |
 | trackName | The name of the track |
