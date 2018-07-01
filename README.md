@@ -15,6 +15,7 @@ An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 | <a href="#global_links">global._links</a> | 3 minutes
 | <a href="#global_uniquePlayers">global.uniquePlayers</a> | 1 minute
 | <a href="#global_leaderboardCount">global.leaderboardCount</a> | 1 minute
+| <a href="#global_ghostCount">global.ghostCount</a> | 1 minute
 
 
 ## About
@@ -43,7 +44,6 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 ## global._links
 **Type:** object&lt;object&gt; <br/>
 **Available in:** any<br/>
-**Static length:** 6 items<br/>
 **Static length:** no<br/>
 **Description:** The `_links` is an object with all links that are shown (file extension is `.json`) in `div._1c1 side-navigation` (link box): <br/>
 <img src="https://i.imgur.com/Yjb8WOT.png" /> <br/>
@@ -60,3 +60,9 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 **Available in:** `/index.json` <br />
 **Static length:** no<br/>
 **Description:** The amount of existing leaderboards (every track has its own leaderboard, including custom tracks that are not in CTGP-R)
+
+## global.ghostCount
+**Type:** integer <br />
+**Available in:** `index.json` <br/>
+**Static length:** no<br/>
+**Description:** The amount of ghosts that exist in the database in **all** categories and on **all** leaderboards.
