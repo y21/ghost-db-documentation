@@ -10,7 +10,7 @@ An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 | <a href="#contributing-and-pull-requests">Contributing and Pull Requests</a>| 2 minutes
 | Documentation |
 | <a href="#return-format">Return Format | 1 minute
-| <a href="#endpoints">Endpoints</a> | 1 minute |
+| <a href="#endpoints">Endpoints</a> | 3 minutes |
 
 ## About
 Unfortunately, the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Database API</a> is undocumented, and no one has made a documentation for it yet, so I decided it would be helpful for developers in the Mario Kart Wii community to write one, so that people can use the API in their application without any problems.
@@ -28,4 +28,8 @@ In case you found a typo or another mistake, feel free to submit a pull request.
 The API returns data as JSON which is already part of the web standard and almost every language can parse and work with it. 
 
 ## Endpoints
-Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/">chadsoft.co.uk</a> can be reached through the <a href="http://tt.chadsoft.co.uk/index.json">API</a> using its route (`/directory/file.json`), so for example http://chadsoft.co.uk/time-trials/ becomes http://tt.chadsoft.co.uk/index.json.
+Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/">chadsoft.co.uk</a> can be accessed through the <a href="http://tt.chadsoft.co.uk/index.json">API</a> using its route (`/directory/file.json`), so for example `http://chadsoft.co.uk/time-trials/` becomes `http://tt.chadsoft.co.uk/index.json`. <br/>
+**Note**: Keep in mind that you have to change the file extension `.html` to `.json`
+>The data will not be "pretty-printed" (linebreaks, spaces and easy-to-read code in general), so if you want to try out an endpoint, you might want to download an extension that formats JSON for you. <br />
+>I recommend <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatter</a> for Google Chrome or <a href="https://addons.mozilla.org/en-US/firefox/addon/jsonview/">JSONView</a> for Firefox.
+
