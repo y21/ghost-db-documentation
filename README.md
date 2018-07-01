@@ -1,6 +1,17 @@
 # ghost-db-documentation
 An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 
+## Table of Contents
+| Section | Reading time|
+|---------|-------------|
+| Introduction parts |
+| <a href="#about">About</a>  | 1 minute |
+| <a href="#issues">Issues</a> | 1 minute |
+| <a href="#contributing-and-pull-requests">Contributing and Pull Requests</a>| 2 minutes
+| Documentation |
+| <a href="#return-format">Return Format | 1 minute
+| <a href="#endpoints">Endpoints</a> | 1 minute |
+
 ## About
 Unfortunately, the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Database API</a> is undocumented, and no one has made a documentation for it yet, so I decided it would be helpful for developers in the Mario Kart Wii community to write one, so that people can use the API in their application without any problems.
 
