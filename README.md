@@ -48,6 +48,7 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 **Description:** The `_links` is an object with all links that are shown (file extension is `.json`) in `div._1c1 side-navigation` (link box): <br/>
 <img src="https://i.imgur.com/Yjb8WOT.png" /> <br/>
 `_links.self` is the **current** page, so if you're requesting `/index.json` it should say `./index.json`.
+`_links.self` is the **current** page, so if you're requesting `/index.json` it should say `/index.json`.
 
 ## global.uniquePlayers
 **Type:** integer <br />
@@ -64,5 +65,6 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 ## global.ghostCount
 **Type:** integer <br />
 **Available in:** `index.json` <br/>
+**Available in:** `/index.json` <br/>
 **Static length:** no<br/>
 **Description:** The amount of ghosts that exist in the database in **all** categories and on **all** leaderboards.
