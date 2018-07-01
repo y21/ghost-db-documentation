@@ -44,6 +44,7 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 **Type:** object&lt;object&gt; <br/>
 **Available in:** any<br/>
 **Static length:** 6 items<br/>
+**Static length:** no<br/>
 **Description:** The `_links` is an object with all links that are shown (file extension is `.json`) in `div._1c1 side-navigation` (link box): <br/>
 <img src="https://i.imgur.com/Yjb8WOT.png" /> <br/>
 `_links.self` is the **current** page, so if you're requesting `/index.json` it should say `./index.json`.
