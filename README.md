@@ -11,9 +11,13 @@ An unofficial markdown documentation for Chadsoft's ghost leaderboard API.
 | Documentation |
 | <a href="#return-format">Return Format | 1 minute
 | <a href="#endpoints">Endpoints</a> | 3 minutes |
+| `global` properties |
+| `global._links` | 3 minutes
 
 ## About
-Unfortunately, the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Database API</a> is undocumented, and no one has made a documentation for it yet, so I decided it would be helpful for developers in the Mario Kart Wii community to write one, so that people can use the API in their application without any problems.
+Unfortunately, the <a href="http://chadsoft.co.uk/time-trials/">CTGP-R Ghost Database API</a> is undocumented, and no one has made a documentation for it yet, so I decided it would be helpful for developers in the Mario Kart Wii community to write one, so that people can use the API in their application without any problems. <br/>
+**Note:** `global` is meant to be the main object of returned data, example:
+<img src="https://i.imgur.com/kvsOhxE.png" />
 
 ## Issues
 If you have questions about CTGP-R or Mario Kart Wii in general, you should not open an issue. You might want to consider contacting <a href="https://www.youtube.com/user/MrBean35000vr">MrBean</a> or Chadderz (founders of CTGP-R) if your problem/question is related to CTGP. You should **only** open issues about the documentation and the API itself.
@@ -32,4 +36,11 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 **Note**: Keep in mind that you have to change the file extension `.html` to `.json`
 >The data will not be "pretty-printed" (linebreaks, spaces and easy-to-read code in general), so if you want to try out an endpoint, you might want to download an extension that formats JSON for you. <br />
 >I recommend <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatter</a> for Google Chrome or <a href="https://addons.mozilla.org/en-US/firefox/addon/jsonview/">JSONView</a> for Firefox.
-
+---
+## global._links
+**Type:** object&lt;object&gt; <br/>
+**Available in:** any<br/>
+**Static length:** 6 items<br/>
+**Description:** The `_links` is an object with all links that are shown (file extension is `.json`) in `div._1c1 side-navigation` (link box): <br/>
+<img src="https://i.imgur.com/Yjb8WOT.png" /> <br/>
+`_links.self` is the **current** page, so if you're requesting `/index.json` it should say `./index.json`.
