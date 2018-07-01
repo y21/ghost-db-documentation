@@ -47,7 +47,6 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 **Static length:** no<br/>
 **Description:** The `_links` is an object with all links that are shown (file extension is `.json`) in `div._1c1 side-navigation` (link box): <br/>
 <img src="https://i.imgur.com/Yjb8WOT.png" /> <br/>
-`_links.self` is the **current** page, so if you're requesting `/index.json` it should say `./index.json`.
 `_links.self` is the **current** page, so if you're requesting `/index.json` it should say `/index.json`.
 
 ## global.uniquePlayers
@@ -64,7 +63,30 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 
 ## global.ghostCount
 **Type:** integer <br />
-**Available in:** `index.json` <br/>
 **Available in:** `/index.json` <br/>
 **Static length:** no<br/>
 **Description:** The amount of ghosts that exist in the database in **all** categories and on **all** leaderboards.
+
+## global.recentRecords
+**Type:** array&lt;object&lt;object&gt;&gt; <br/>
+**Available in:** `/index.json` <br/>
+**Static length:** 10 <br/>
+**Description:** An array of ghosts (typeof object) with several properties that represent information about the ghost: <br />
+| Property | Description |
+| -------- | ----------- |
+| _links   | An object with links that refers to the `item` (ghost), `player` and `leaderboard`.
+| href | The link to the ghost, equivalent to `_links.item`
+| player | The name of racers' mii
+| trackId | The track ID
+| trackName | The name of the track
+| trackVersion | The version of the track
+| defaultTrack | Whether the track is a nintendo track (`true`) or a custom track (`false`)
+| finishTime | The exact time when the ghost finished the time trial. (Format: `mm:ss:msmsmsmsmsmsmsmsmsmsmsms`, m = minute, s = second, ms = millisecond)
+| finishTimeSimple | Same as `finishTime` but kept simple, this will be displayed in the CTGP-R channel, ceiled to 3 digits. (Format: `mm:ss:msmsms`)
+| bestSplit | Time of best round of ghost (Format: see `finishTime`)
+| bestSplitSimple | Same as `bestSplit` but kept simple (Format/ceiling: see `finishTimeSimple`)
+| hash | The SHA1 hash of ghost
+| vehicleId | The vehicle id
+| driverId | The driver id
+| dataSet | The ISO 8601 timestamp of when the ghost was created
+| isTie | Whether it's a tie or not
