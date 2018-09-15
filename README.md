@@ -34,7 +34,8 @@ In case you found a typo or another mistake, feel free to submit a pull request.
 
 ---
 ## Return Format
-The API returns data as JSON which is already part of the web standard and almost every language can parse and work with it. 
+The API returns data as JSON which is already part of the web standard and almost every language can parse and work with it. <br />
+**Warning**: The first character of returned data is a BOM (Byte order mark). If your language/library does not exclude it automatically when parsing, __you__ should do it.
 
 ## Endpoints
 Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/">chadsoft.co.uk</a> can be accessed through the <a href="http://tt.chadsoft.co.uk/index.json">API</a> using its route (`/directory/file.json`), so for example `http://chadsoft.co.uk/time-trials/` becomes `http://tt.chadsoft.co.uk/index.json`. <br/>
