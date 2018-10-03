@@ -96,3 +96,4 @@ Every route in the subdirectory `time-trials` of <a href="http://chadsoft.co.uk/
 | driverId | The driver id |
 | dataSet | The ISO 8601 timestamp of when the ghost was created |
 | isTie | Whether it's a tie or not |
+| controller | [The controller code](https://github.com/y21/wiiset-bot/blob/master/controllerCodes.json)
